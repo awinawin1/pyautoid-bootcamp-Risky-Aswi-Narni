@@ -7,6 +7,8 @@ driver.minimize_window()
 
 for i in link:
     driver.get(i)
-    print(driver.title)
+    web = i
+
+    print(web[8:], "-", driver.title)
     
 driver.close()
